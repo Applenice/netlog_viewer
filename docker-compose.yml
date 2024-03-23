@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  netlog_viewer:
+    image: applenice/catapult:RELEASE.2024-03-20T20-38-58Z
+    command: ["bash", "-c", "cd /opt/catapult/netlog_viewer && ./bin/serve_static"]
+    ports:
+      - "8080:8080"
